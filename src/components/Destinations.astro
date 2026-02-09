@@ -1,5 +1,5 @@
 ---
-import { getLangFromUrl, useTranslations } from '../i18n/utils';
+import { getLangFromUrl, useTranslations, asset } from '../i18n/utils';
 
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
@@ -8,28 +8,28 @@ const destinations = [
   {
     name: t('destinations.dest1.name'),
     description: t('destinations.dest1.description'),
-    image: '/images/dest-masai-mara.svg',
+    image: asset('/images/dest-masai-mara.svg'),
     distance: lang === 'es' ? '270 km desde Nairobi' : '270 km from Nairobi',
     highlight: lang === 'es' ? 'Gran Migración' : 'Great Migration',
   },
   {
     name: t('destinations.dest2.name'),
     description: t('destinations.dest2.description'),
-    image: '/images/dest-amboseli.svg',
+    image: asset('/images/dest-amboseli.svg'),
     distance: lang === 'es' ? '240 km desde Nairobi' : '240 km from Nairobi',
     highlight: lang === 'es' ? 'Vista del Kilimanjaro' : 'Kilimanjaro views',
   },
   {
     name: t('destinations.dest3.name'),
     description: t('destinations.dest3.description'),
-    image: '/images/dest-tsavo.svg',
+    image: asset('/images/dest-tsavo.svg'),
     distance: lang === 'es' ? '330 km desde Nairobi' : '330 km from Nairobi',
     highlight: lang === 'es' ? 'Parque más grande' : 'Largest park',
   },
   {
     name: t('destinations.dest4.name'),
     description: t('destinations.dest4.description'),
-    image: '/images/dest-nakuru.svg',
+    image: asset('/images/dest-nakuru.svg'),
     distance: lang === 'es' ? '160 km desde Nairobi' : '160 km from Nairobi',
     highlight: lang === 'es' ? 'Flamencos & rinocerontes' : 'Flamingos & rhinos',
   },

@@ -1,5 +1,5 @@
 ---
-import { getLangFromUrl, useTranslations, getAlternateLang, getLocalizedPath } from '../i18n/utils';
+import { getLangFromUrl, useTranslations, getAlternateLang, getLocalizedPath, asset } from '../i18n/utils';
 
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
@@ -12,7 +12,7 @@ const altLangLabel = altLang === 'en' ? 'English' : 'Español';
     <div class="flex items-center justify-between h-20">
       <!-- Logo -->
       <a href={getLocalizedPath(lang, '/')} class="flex items-center gap-3 group">
-        <img src="/images/logo-placeholder.svg" alt="Safari Rentals Kenya" class="h-10 w-auto" />
+        <img src={asset('/images/logo-placeholder.svg')} alt="Safari Rentals Kenya" class="h-10 w-auto" />
       </a>
 
       <!-- Desktop Navigation -->

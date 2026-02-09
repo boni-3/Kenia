@@ -1,5 +1,5 @@
 ---
-import { getLangFromUrl, useTranslations } from '../i18n/utils';
+import { getLangFromUrl, useTranslations, asset } from '../i18n/utils';
 
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
@@ -14,7 +14,7 @@ const vehicles = [
     transmission: t('fleet.vehicle1.transmission'),
     fuel: t('fleet.vehicle1.fuel'),
     drive: t('fleet.vehicle1.drive'),
-    image: '/images/vehicle-land-cruiser.svg',
+    image: asset('/images/vehicle-land-cruiser.svg'),
     popular: true,
   },
   {
@@ -26,7 +26,7 @@ const vehicles = [
     transmission: t('fleet.vehicle2.transmission'),
     fuel: t('fleet.vehicle2.fuel'),
     drive: t('fleet.vehicle2.drive'),
-    image: '/images/vehicle-prado.svg',
+    image: asset('/images/vehicle-prado.svg'),
     popular: false,
   },
   {
@@ -38,7 +38,7 @@ const vehicles = [
     transmission: t('fleet.vehicle3.transmission'),
     fuel: t('fleet.vehicle3.fuel'),
     drive: t('fleet.vehicle3.drive'),
-    image: '/images/vehicle-hilux.svg',
+    image: asset('/images/vehicle-hilux.svg'),
     popular: false,
   },
   {
@@ -50,7 +50,7 @@ const vehicles = [
     transmission: t('fleet.vehicle4.transmission'),
     fuel: t('fleet.vehicle4.fuel'),
     drive: t('fleet.vehicle4.drive'),
-    image: '/images/vehicle-rav4.svg',
+    image: asset('/images/vehicle-rav4.svg'),
     popular: false,
   },
   {
@@ -62,7 +62,7 @@ const vehicles = [
     transmission: t('fleet.vehicle5.transmission'),
     fuel: t('fleet.vehicle5.fuel'),
     drive: t('fleet.vehicle5.drive'),
-    image: '/images/vehicle-defender.svg',
+    image: asset('/images/vehicle-defender.svg'),
     popular: false,
   },
   {
@@ -74,7 +74,7 @@ const vehicles = [
     transmission: t('fleet.vehicle6.transmission'),
     fuel: t('fleet.vehicle6.fuel'),
     drive: t('fleet.vehicle6.drive'),
-    image: '/images/vehicle-safari-van.svg',
+    image: asset('/images/vehicle-safari-van.svg'),
     popular: false,
   },
 ];

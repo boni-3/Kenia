@@ -1,0 +1,125 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <defs>
+    <linearGradient id="tsSky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#c2442d"/>
+      <stop offset="25%" stop-color="#d4792a"/>
+      <stop offset="50%" stop-color="#e8a040"/>
+      <stop offset="75%" stop-color="#f0c868"/>
+      <stop offset="100%" stop-color="#f5dca0"/>
+    </linearGradient>
+    <linearGradient id="tsGround" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#b85a30"/>
+      <stop offset="30%" stop-color="#a04828"/>
+      <stop offset="70%" stop-color="#8a3820"/>
+      <stop offset="100%" stop-color="#6a2a18"/>
+    </linearGradient>
+    <radialGradient id="tsHaze" cx="0.5" cy="0.6" r="0.4">
+      <stop offset="0%" stop-color="#f0c868" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#f0c868" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Sky - hot, dusty -->
+  <rect width="800" height="500" fill="url(#tsSky)"/>
+  <rect width="800" height="500" fill="url(#tsHaze)"/>
+
+  <!-- Distant rocky hills -->
+  <path d="M0 280 Q60 255 130 270 Q200 250 280 265 Q360 245 440 260 Q520 248 600 262 Q680 250 750 265 L800 258 L800 300 L0 300 Z" fill="#8a5a3a" opacity="0.4"/>
+
+  <!-- Red earth ground -->
+  <path d="M0 290 Q200 280 400 290 Q600 284 800 295 L800 500 L0 500 Z" fill="url(#tsGround)"/>
+
+  <!-- Red earth texture (subtle patterns) -->
+  <g fill="#9a4a28" opacity="0.2">
+    <ellipse cx="150" cy="380" rx="60" ry="3"/>
+    <ellipse cx="400" cy="400" rx="80" ry="3"/>
+    <ellipse cx="650" cy="370" rx="50" ry="2.5"/>
+    <ellipse cx="300" cy="430" rx="70" ry="3"/>
+    <ellipse cx="550" cy="450" rx="60" ry="2.5"/>
+  </g>
+
+  <!-- Baobab tree 1 (large, left) -->
+  <g transform="translate(160, 0)">
+    <!-- Massive trunk -->
+    <path d="M-25 480 Q-30 420 -28 370 Q-25 330 -20 300 Q-15 280 -10 268 Q-5 260 0 255 Q5 260 10 268 Q15 280 20 300 Q25 330 28 370 Q30 420 25 480" fill="#5a4a38" stroke="#4a3a28" stroke-width="1"/>
+    <!-- Trunk texture -->
+    <line x1="-15" y1="300" x2="-12" y2="420" stroke="#4a3a28" stroke-width="0.8" opacity="0.4"/>
+    <line x1="5" y1="290" x2="8" y2="400" stroke="#4a3a28" stroke-width="0.8" opacity="0.4"/>
+    <line x1="15" y1="310" x2="14" y2="430" stroke="#4a3a28" stroke-width="0.8" opacity="0.3"/>
+
+    <!-- Branches (gnarled, reaching up) -->
+    <path d="M-10 268 Q-25 250 -45 235 Q-55 225 -70 218" stroke="#5a4a38" stroke-width="5" fill="none" stroke-linecap="round"/>
+    <path d="M-45 235 Q-50 220 -60 210" stroke="#5a4a38" stroke-width="3" fill="none" stroke-linecap="round"/>
+    <path d="M-70 218 Q-80 210 -90 208" stroke="#5a4a38" stroke-width="2" fill="none" stroke-linecap="round"/>
+
+    <path d="M-5 258 Q-15 235 -25 220 Q-30 210 -28 200" stroke="#5a4a38" stroke-width="4" fill="none" stroke-linecap="round"/>
+    <path d="M-25 220 Q-35 215 -42 212" stroke="#5a4a38" stroke-width="2" fill="none" stroke-linecap="round"/>
+
+    <path d="M5 258 Q12 235 20 218 Q28 205 35 198" stroke="#5a4a38" stroke-width="4" fill="none" stroke-linecap="round"/>
+    <path d="M20 218 Q30 210 40 208" stroke="#5a4a38" stroke-width="2" fill="none" stroke-linecap="round"/>
+
+    <path d="M10 268 Q30 248 48 235 Q58 225 72 220" stroke="#5a4a38" stroke-width="5" fill="none" stroke-linecap="round"/>
+    <path d="M48 235 Q55 222 62 215" stroke="#5a4a38" stroke-width="3" fill="none" stroke-linecap="round"/>
+    <path d="M72 220 Q82 215 88 212" stroke="#5a4a38" stroke-width="2" fill="none" stroke-linecap="round"/>
+
+    <path d="M0 255 Q2 230 5 210 Q8 195 12 185" stroke="#5a4a38" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+  </g>
+
+  <!-- Baobab tree 2 (smaller, distant right) -->
+  <g transform="translate(620, 0) scale(0.55)">
+    <path d="M-18 480 Q-22 420 -20 370 Q-18 330 -14 300 Q-8 275 0 265 Q8 275 14 300 Q18 330 20 370 Q22 420 18 480" fill="#5a4a38" stroke="#4a3a28" stroke-width="1"/>
+    <path d="M-8 268 Q-20 248 -38 235 Q-48 228 -55 222" stroke="#5a4a38" stroke-width="4" fill="none" stroke-linecap="round"/>
+    <path d="M0 265 Q-5 240 -8 220" stroke="#5a4a38" stroke-width="3" fill="none" stroke-linecap="round"/>
+    <path d="M0 265 Q5 242 10 225" stroke="#5a4a38" stroke-width="3" fill="none" stroke-linecap="round"/>
+    <path d="M8 268 Q22 248 38 238 Q48 232 55 228" stroke="#5a4a38" stroke-width="4" fill="none" stroke-linecap="round"/>
+  </g>
+
+  <!-- Small distant baobab -->
+  <g transform="translate(450, 0) scale(0.3)">
+    <path d="M-15 480 Q-18 420 -15 370 Q-12 330 -8 305 Q-4 285 0 278 Q4 285 8 305 Q12 330 15 370 Q18 420 15 480" fill="#5a4a38"/>
+    <path d="M-5 280 Q-12 265 -25 255" stroke="#5a4a38" stroke-width="3" fill="none" stroke-linecap="round"/>
+    <path d="M5 280 Q12 265 25 255" stroke="#5a4a38" stroke-width="3" fill="none" stroke-linecap="round"/>
+    <path d="M0 278 Q0 260 2 248" stroke="#5a4a38" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+  </g>
+
+  <!-- Lion silhouette (resting, center-right foreground) -->
+  <g transform="translate(520, 395)">
+    <!-- Body (lying down) -->
+    <path d="M0 0 Q-5 -8 -2 -18 Q2 -25 10 -28 Q18 -30 30 -28 Q42 -25 52 -20 Q60 -15 65 -8 Q68 -2 65 5 Q60 10 50 12 L48 20 L44 20 L45 12 L15 12 L14 20 L10 20 L12 10 Q5 8 0 0 Z" fill="#30211b" opacity="0.85"/>
+    <!-- Mane -->
+    <path d="M-2 -18 Q-8 -28 -5 -38 Q0 -45 8 -48 Q15 -50 22 -48 Q28 -44 30 -38 Q30 -30 28 -25" fill="#30211b" opacity="0.85"/>
+    <!-- Head -->
+    <path d="M5 -38 Q0 -42 -2 -46 Q-3 -50 0 -52 Q5 -55 10 -54 Q15 -52 16 -48 Q14 -42 10 -38" fill="#30211b" opacity="0.85"/>
+    <!-- Ear -->
+    <path d="M12 -52 Q15 -56 18 -54 Q18 -50 15 -48" fill="#3d2b1a" opacity="0.7"/>
+    <!-- Eye -->
+    <circle cx="5" cy="-48" r="1" fill="#d4792a" opacity="0.6"/>
+    <!-- Tail -->
+    <path d="M65 -5 Q72 -8 78 -12 Q82 -15 85 -18" stroke="#30211b" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.8"/>
+    <!-- Tail tuft -->
+    <circle cx="86" cy="-19" r="3" fill="#30211b" opacity="0.75"/>
+  </g>
+
+  <!-- Sparse thorny bushes -->
+  <g fill="#5a4a2a" opacity="0.3">
+    <ellipse cx="80" cy="370" rx="25" ry="8"/>
+    <ellipse cx="350" cy="380" rx="18" ry="6"/>
+    <ellipse cx="700" cy="365" rx="22" ry="7"/>
+  </g>
+
+  <!-- Red dust wisps -->
+  <g fill="#b85a30" opacity="0.08">
+    <ellipse cx="300" cy="350" rx="100" ry="8"/>
+    <ellipse cx="550" cy="360" rx="80" ry="6"/>
+  </g>
+
+  <!-- Birds -->
+  <g stroke="#6a2a18" stroke-width="1" fill="none" opacity="0.3">
+    <path d="M500 150 Q504 146 508 150 Q512 146 516 150"/>
+    <path d="M530 140 Q533 137 536 140 Q539 137 542 140"/>
+    <path d="M480 160 Q483 157 486 160 Q489 157 492 160"/>
+  </g>
+
+  <!-- Label -->
+  <text x="400" y="480" text-anchor="middle" font-family="Georgia, serif" font-size="20" fill="#f0c868" font-weight="bold" letter-spacing="3" opacity="0.8">TSAVO</text>
+</svg>

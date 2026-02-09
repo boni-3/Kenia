@@ -1,0 +1,123 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <defs>
+    <linearGradient id="amSky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#4a6fa5"/>
+      <stop offset="30%" stop-color="#7badd4"/>
+      <stop offset="60%" stop-color="#b8d4e8"/>
+      <stop offset="80%" stop-color="#dce8f0"/>
+      <stop offset="100%" stop-color="#f0e8d8"/>
+    </linearGradient>
+    <linearGradient id="amMtn" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#e8e8f0"/>
+      <stop offset="30%" stop-color="#8090a8"/>
+      <stop offset="60%" stop-color="#6a7a92"/>
+      <stop offset="100%" stop-color="#5a6a80"/>
+    </linearGradient>
+    <linearGradient id="amSnow" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#d8e0e8"/>
+    </linearGradient>
+    <linearGradient id="amGround" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#c9b888"/>
+      <stop offset="30%" stop-color="#b0a070"/>
+      <stop offset="100%" stop-color="#8a7a50"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Sky -->
+  <rect width="800" height="500" fill="url(#amSky)"/>
+
+  <!-- Atmospheric haze -->
+  <rect x="0" y="200" width="800" height="120" fill="#d8e0e8" opacity="0.2"/>
+
+  <!-- Mount Kilimanjaro silhouette -->
+  <path d="M200 300 L280 180 Q320 140 380 120 Q420 110 460 120 Q520 140 560 180 L640 300" fill="url(#amMtn)"/>
+
+  <!-- Snow cap -->
+  <path d="M320 168 Q350 145 380 130 Q410 118 440 125 Q470 135 500 160 L490 168 Q470 155 450 148 Q420 138 395 140 Q370 142 350 155 Q335 165 325 170 Z" fill="url(#amSnow)" opacity="0.9"/>
+  <!-- Snow detail lines -->
+  <path d="M340 162 Q360 150 380 145 Q400 140 420 142" stroke="#c8d0d8" stroke-width="0.8" fill="none" opacity="0.5"/>
+  <path d="M350 170 Q380 155 410 152" stroke="#c8d0d8" stroke-width="0.5" fill="none" opacity="0.4"/>
+
+  <!-- Mountain base foothills -->
+  <path d="M120 310 Q200 285 320 295 Q450 280 580 295 Q680 285 800 300 L800 330 L0 330 L0 310 Z" fill="#7a8a6a" opacity="0.4"/>
+
+  <!-- Dry savanna ground -->
+  <path d="M0 320 Q200 310 400 320 Q600 315 800 325 L800 500 L0 500 Z" fill="url(#amGround)"/>
+
+  <!-- Cracked earth texture -->
+  <g stroke="#9a8a60" stroke-width="0.5" opacity="0.2">
+    <path d="M100 400 Q120 390 140 400 Q130 410 100 400"/>
+    <path d="M250 420 Q270 410 290 420 Q280 430 250 420"/>
+    <path d="M450 390 Q470 380 490 390 Q480 400 450 390"/>
+    <path d="M600 415 Q620 405 640 415 Q630 425 600 415"/>
+  </g>
+
+  <!-- Dust devil hint -->
+  <path d="M650 370 Q648 350 652 330 Q649 310 653 290" stroke="#c9b888" stroke-width="2" fill="none" opacity="0.15"/>
+
+  <!-- Elephant family silhouettes -->
+  <!-- Large elephant (matriarch) -->
+  <g transform="translate(280, 340)">
+    <!-- Body -->
+    <path d="M0 0 Q-10 -25 -5 -50 Q0 -65 10 -72 Q18 -78 28 -80 Q40 -82 52 -78 Q62 -72 68 -60 Q72 -48 70 -35 Q68 -20 60 -5 Q55 5 50 12 L48 40 L42 40 L44 15 L38 10 L32 10 L30 40 L24 40 L28 12 Q15 8 5 5 L3 40 L-3 40 L0 5 Q-5 2 0 0 Z" fill="#30211b" opacity="0.85"/>
+    <!-- Head and trunk -->
+    <path d="M-5 -50 Q-15 -55 -20 -52 Q-25 -48 -22 -38 Q-18 -30 -12 -28 Q-8 -35 -5 -50" fill="#30211b" opacity="0.85"/>
+    <!-- Trunk -->
+    <path d="M-22 -38 Q-28 -28 -30 -15 Q-32 -5 -28 5" stroke="#30211b" stroke-width="4" fill="none" stroke-linecap="round" opacity="0.85"/>
+    <!-- Ear -->
+    <path d="M-8 -60 Q-18 -65 -22 -55 Q-20 -48 -12 -48" fill="#3d2b1a" opacity="0.7"/>
+    <!-- Tusk -->
+    <path d="M-18 -32 Q-20 -25 -16 -20" stroke="#c9b888" stroke-width="1.5" fill="none"/>
+    <!-- Eye -->
+    <circle cx="-12" cy="-50" r="1" fill="#6b5a40"/>
+    <!-- Tail -->
+    <path d="M68 -40 Q75 -45 78 -50" stroke="#30211b" stroke-width="1.5" fill="none"/>
+  </g>
+
+  <!-- Medium elephant -->
+  <g transform="translate(380, 348) scale(0.75)">
+    <path d="M0 0 Q-10 -25 -5 -50 Q0 -65 10 -72 Q18 -78 28 -80 Q40 -82 52 -78 Q62 -72 68 -60 Q72 -48 70 -35 Q68 -20 60 -5 Q55 5 50 12 L48 38 L43 38 L44 15 L38 10 L32 10 L30 38 L25 38 L28 12 Q15 8 5 5 L3 38 L-2 38 L0 5 Q-5 2 0 0 Z" fill="#30211b" opacity="0.8"/>
+    <path d="M-5 -50 Q-15 -55 -20 -52 Q-25 -48 -22 -38 Q-18 -30 -12 -28 Q-8 -35 -5 -50" fill="#30211b" opacity="0.8"/>
+    <path d="M-22 -38 Q-26 -28 -28 -18 Q-30 -8 -25 2" stroke="#30211b" stroke-width="3.5" fill="none" stroke-linecap="round" opacity="0.8"/>
+    <path d="M-8 -60 Q-16 -64 -20 -55 Q-18 -48 -12 -48" fill="#3d2b1a" opacity="0.65"/>
+    <path d="M68 -40 Q75 -45 77 -48" stroke="#30211b" stroke-width="1.5" fill="none"/>
+  </g>
+
+  <!-- Baby elephant -->
+  <g transform="translate(355, 365) scale(0.45)">
+    <path d="M0 0 Q-8 -20 -4 -42 Q0 -55 8 -62 Q15 -68 25 -70 Q35 -72 45 -68 Q53 -62 58 -52 Q62 -40 60 -28 Q58 -15 50 -3 Q46 3 42 8 L40 32 L36 32 L37 10 L32 6 L28 6 L26 32 L22 32 L24 8 Q14 5 5 3 L3 32 L-1 32 L0 3 Q-4 1 0 0 Z" fill="#30211b" opacity="0.75"/>
+    <path d="M-4 -42 Q-12 -46 -16 -44 Q-20 -40 -18 -32 Q-14 -25 -10 -24" fill="#30211b" opacity="0.75"/>
+    <path d="M-18 -32 Q-22 -24 -20 -15" stroke="#30211b" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.75"/>
+  </g>
+
+  <!-- Distant elephant -->
+  <g transform="translate(520, 355) scale(0.4)">
+    <path d="M0 0 Q-8 -22 -4 -45 Q0 -58 10 -65 Q20 -72 32 -72 Q45 -72 55 -62 Q62 -50 60 -30 Q55 -10 45 5 L42 30 L38 30 L40 8 L32 3 L28 8 L26 30 L22 30 L24 5 Q12 2 2 0 Z" fill="#30211b" opacity="0.55"/>
+    <path d="M-4 -45 Q-12 -48 -15 -42 Q-14 -35 -8 -34" fill="#30211b" opacity="0.55"/>
+    <path d="M-15 -35 Q-18 -25 -15 -18" stroke="#30211b" stroke-width="2.5" fill="none" opacity="0.55"/>
+  </g>
+
+  <!-- Sparse dry grass -->
+  <g fill="#9b8a50" opacity="0.4">
+    <path d="M50 450 Q55 430 52 415 Q60 425 65 450"/>
+    <path d="M150 445 Q155 425 152 410 Q160 420 165 445"/>
+    <path d="M480 455 Q485 435 482 420 Q490 430 495 455"/>
+    <path d="M700 450 Q705 430 702 415 Q710 425 715 450"/>
+  </g>
+
+  <!-- Sparse scrub bushes -->
+  <ellipse cx="120" cy="380" rx="20" ry="8" fill="#5a6a3a" opacity="0.3"/>
+  <ellipse cx="550" cy="385" rx="15" ry="6" fill="#5a6a3a" opacity="0.25"/>
+  <ellipse cx="700" cy="375" rx="18" ry="7" fill="#5a6a3a" opacity="0.25"/>
+
+  <!-- Birds (vultures circling) -->
+  <g stroke="#4a5a6a" stroke-width="1" fill="none" opacity="0.3">
+    <path d="M200 100 Q204 96 208 100 Q212 96 216 100"/>
+    <path d="M230 110 Q233 107 236 110 Q239 107 242 110"/>
+    <path d="M180 115 Q183 112 186 115 Q189 112 192 115"/>
+  </g>
+
+  <!-- Label -->
+  <text x="400" y="480" text-anchor="middle" font-family="Georgia, serif" font-size="20" fill="#5a6a80" font-weight="bold" letter-spacing="3" opacity="0.7">AMBOSELI</text>
+</svg>

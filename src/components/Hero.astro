@@ -1,5 +1,5 @@
 ---
-import { getLangFromUrl, useTranslations } from '../i18n/utils';
+import { getLangFromUrl, useTranslations, asset } from '../i18n/utils';
 
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
@@ -8,7 +8,7 @@ const t = useTranslations(lang);
 <section id="hero" class="relative min-h-screen flex items-center justify-center overflow-hidden">
   <!-- Background -->
   <div class="absolute inset-0">
-    <img src="/images/hero-bg.svg" alt="" class="w-full h-full object-cover" />
+    <img src={asset('/images/hero-bg.svg')} alt="" class="w-full h-full object-cover" />
     <div class="absolute inset-0 bg-gradient-to-b from-brand-950/70 via-brand-950/50 to-brand-950/80"></div>
   </div>
 

@@ -1,5 +1,5 @@
 ---
-import { getLangFromUrl, useTranslations, getAlternateLang, getLocalizedPath } from '../i18n/utils';
+import { getLangFromUrl, useTranslations, getAlternateLang, getLocalizedPath, asset } from '../i18n/utils';
 
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
@@ -13,7 +13,7 @@ const altLang = getAlternateLang(lang);
       <!-- Brand -->
       <div class="sm:col-span-2 lg:col-span-1">
         <a href={getLocalizedPath(lang, '/')} class="inline-block mb-4">
-          <img src="/images/logo-placeholder.svg" alt="Safari Rentals Kenya" class="h-10 w-auto brightness-0 invert" />
+          <img src={asset('/images/logo-placeholder.svg')} alt="Safari Rentals Kenya" class="h-10 w-auto brightness-0 invert" />
         </a>
         <p class="text-white/60 text-sm leading-relaxed mb-6">{t('footer.description')}</p>
 

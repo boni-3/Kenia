@@ -1,0 +1,138 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="600" height="400">
+  <defs>
+    <linearGradient id="svBg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f2e6d4"/>
+      <stop offset="100%" stop-color="#e2d4c0"/>
+    </linearGradient>
+    <linearGradient id="svBody" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#4a3525"/>
+      <stop offset="100%" stop-color="#30211b"/>
+    </linearGradient>
+    <linearGradient id="svRoof" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f5e6d3"/>
+      <stop offset="100%" stop-color="#d4b896"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="600" height="400" fill="url(#svBg)"/>
+  <circle cx="480" cy="330" r="130" fill="#d4b896" opacity="0.2"/>
+
+  <!-- Ground -->
+  <rect x="0" y="318" width="600" height="82" fill="#c9a882"/>
+  <rect x="0" y="340" width="600" height="60" fill="#b8956e"/>
+
+  <!-- Shadow -->
+  <ellipse cx="295" cy="316" rx="180" ry="11" fill="#8a7560" opacity="0.35"/>
+
+  <!-- Safari minivan with pop-up roof -->
+  <g transform="translate(85, 120)">
+    <!-- Undercarriage -->
+    <rect x="35" y="168" width="360" height="10" rx="3" fill="#1a1410"/>
+
+    <!-- Main body - minivan shape -->
+    <path d="M45 70 L45 172 L400 172 L400 85 L385 70 L310 70 Q305 50 295 40 L120 40 Q110 50 105 70 Z" fill="url(#svBody)"/>
+
+    <!-- Pop-up roof section (raised/open) -->
+    <path d="M130 40 L130 8 L275 8 L275 40" fill="none" stroke="#30211b" stroke-width="2"/>
+    <!-- Pop-up canvas sides -->
+    <path d="M130 40 L130 8 L275 8 L275 40" fill="url(#svRoof)" opacity="0.9"/>
+    <!-- Canvas texture lines -->
+    <line x1="130" y1="15" x2="275" y2="15" stroke="#c9a882" stroke-width="0.5" opacity="0.5"/>
+    <line x1="130" y1="24" x2="275" y2="24" stroke="#c9a882" stroke-width="0.5" opacity="0.5"/>
+    <line x1="130" y1="33" x2="275" y2="33" stroke="#c9a882" stroke-width="0.5" opacity="0.5"/>
+    <!-- Pop-up roof top -->
+    <rect x="125" y="4" width="155" height="6" rx="2" fill="#30211b"/>
+    <!-- Support struts -->
+    <line x1="132" y1="8" x2="132" y2="40" stroke="#5a4535" stroke-width="2"/>
+    <line x1="273" y1="8" x2="273" y2="40" stroke="#5a4535" stroke-width="2"/>
+
+    <!-- Windshield -->
+    <path d="M293 42 Q307 62 310 70 L110 70 Q113 62 125 42 Z" fill="#8b7355" opacity="0.65"/>
+
+    <!-- Side windows (large safari windows) -->
+    <rect x="112" y="48" width="50" height="28" rx="2" fill="#8b7355" opacity="0.55"/>
+    <rect x="168" y="48" width="50" height="28" rx="2" fill="#8b7355" opacity="0.55"/>
+    <rect x="224" y="48" width="50" height="28" rx="2" fill="#8b7355" opacity="0.5"/>
+    <!-- Rear quarter window -->
+    <rect x="280" y="52" width="25" height="24" rx="2" fill="#8b7355" opacity="0.45"/>
+
+    <!-- Window dividers -->
+    <line x1="162" y1="40" x2="162" y2="78" stroke="#30211b" stroke-width="4"/>
+    <line x1="218" y1="40" x2="218" y2="78" stroke="#30211b" stroke-width="4"/>
+    <line x1="274" y1="40" x2="274" y2="78" stroke="#30211b" stroke-width="4"/>
+
+    <!-- Belt line -->
+    <line x1="47" y1="78" x2="398" y2="78" stroke="#3d2b1a" stroke-width="2"/>
+
+    <!-- Sliding door track -->
+    <path d="M162 78 L162 170" stroke="#3d2b1a" stroke-width="1.5"/>
+    <path d="M270 78 L270 170" stroke="#3d2b1a" stroke-width="1.5"/>
+
+    <!-- Door handles -->
+    <rect x="175" y="108" width="14" height="4" rx="2" fill="#6b5a45"/>
+    <rect x="240" y="108" width="14" height="4" rx="2" fill="#6b5a45"/>
+
+    <!-- Safari stripe/band -->
+    <rect x="48" y="100" width="350" height="4" rx="1" fill="#d4792a" opacity="0.4"/>
+
+    <!-- Hood -->
+    <path d="M310 70 L385 70 L400 85 L400 135 L310 135 Z" fill="#352518" opacity="0.7"/>
+
+    <!-- Front grille -->
+    <rect x="395" y="85" width="10" height="75" rx="2" fill="#30211b"/>
+    <line x1="397" y1="92" x2="403" y2="92" stroke="#5a4a3a" stroke-width="1"/>
+    <line x1="397" y1="98" x2="403" y2="98" stroke="#5a4a3a" stroke-width="1"/>
+    <line x1="397" y1="104" x2="403" y2="104" stroke="#5a4a3a" stroke-width="1"/>
+    <line x1="397" y1="110" x2="403" y2="110" stroke="#5a4a3a" stroke-width="1"/>
+
+    <!-- Headlights -->
+    <rect x="397" y="88" width="6" height="12" rx="2" fill="#f5d799" opacity="0.7"/>
+    <rect x="397" y="130" width="6" height="10" rx="2" fill="#d4792a" opacity="0.5"/>
+
+    <!-- Bumper -->
+    <rect x="395" y="155" width="12" height="10" rx="2" fill="#3d2b1a"/>
+
+    <!-- Rear -->
+    <rect x="40" y="70" width="8" height="90" rx="2" fill="#2a1c12"/>
+    <rect x="41" y="75" width="5" height="18" rx="2" fill="#c2442d" opacity="0.6"/>
+    <rect x="41" y="98" width="5" height="8" rx="1" fill="#f5d799" opacity="0.4"/>
+
+    <!-- Wheel arches -->
+    <path d="M60 140 Q60 118 88 110 Q112 105 132 112 Q150 122 150 140" fill="#1a1410"/>
+    <path d="M295 140 Q295 118 323 110 Q347 105 367 112 Q385 122 385 140" fill="#1a1410"/>
+
+    <!-- Rear wheel -->
+    <circle cx="105" cy="172" r="28" fill="#1a1410"/>
+    <circle cx="105" cy="172" r="22" fill="#2a2018"/>
+    <circle cx="105" cy="172" r="17" fill="#383028"/>
+    <circle cx="105" cy="172" r="6" fill="#5a5550"/>
+    <g stroke="#4a4540" stroke-width="2.5">
+      <line x1="105" y1="158" x2="105" y2="186"/>
+      <line x1="91" y1="172" x2="119" y2="172"/>
+      <line x1="95" y1="162" x2="115" y2="182"/>
+      <line x1="115" y1="162" x2="95" y2="182"/>
+    </g>
+
+    <!-- Front wheel -->
+    <circle cx="340" cy="172" r="28" fill="#1a1410"/>
+    <circle cx="340" cy="172" r="22" fill="#2a2018"/>
+    <circle cx="340" cy="172" r="17" fill="#383028"/>
+    <circle cx="340" cy="172" r="6" fill="#5a5550"/>
+    <g stroke="#4a4540" stroke-width="2.5">
+      <line x1="340" y1="158" x2="340" y2="186"/>
+      <line x1="326" y1="172" x2="354" y2="172"/>
+      <line x1="330" y1="162" x2="350" y2="182"/>
+      <line x1="350" y1="162" x2="330" y2="182"/>
+    </g>
+
+    <!-- Running board -->
+    <rect x="148" y="166" width="148" height="3" rx="1" fill="#4a3525"/>
+
+    <!-- Pop-up opening indicator (person could stand here) -->
+    <path d="M160 8 L160 -10 Q200 -18 240 -10 L240 8" fill="none" stroke="#d4792a" stroke-width="1" stroke-dasharray="4,3" opacity="0.4"/>
+  </g>
+
+  <!-- Label -->
+  <text x="300" y="380" text-anchor="middle" font-family="Georgia, serif" font-size="16" fill="#6b4c30" font-weight="bold" letter-spacing="2">SAFARI VAN</text>
+</svg>

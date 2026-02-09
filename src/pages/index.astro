@@ -1,4 +1,15 @@
 ---
-// Root redirect to default locale (Spanish)
-return Astro.redirect('/es/');
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 ---
+
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="refresh" content={`0;url=${base}/es/`} />
+    <link rel="canonical" href={`${base}/es/`} />
+    <title>Redirecting...</title>
+  </head>
+  <body>
+    <p>Redirecting to <a href={`${base}/es/`}>Spanish version</a>...</p>
+  </body>
+</html>

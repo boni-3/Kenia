@@ -1,0 +1,175 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 800" width="1920" height="800">
+  <defs>
+    <!-- Sunset sky gradient -->
+    <linearGradient id="skyGradient" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1a0a2e"/>
+      <stop offset="15%" stop-color="#4a1942"/>
+      <stop offset="35%" stop-color="#c2442d"/>
+      <stop offset="55%" stop-color="#e8751a"/>
+      <stop offset="70%" stop-color="#f5a623"/>
+      <stop offset="85%" stop-color="#f7d794"/>
+      <stop offset="100%" stop-color="#ffeaa7"/>
+    </linearGradient>
+    <!-- Sun glow -->
+    <radialGradient id="sunGlow" cx="0.5" cy="0.62" r="0.35">
+      <stop offset="0%" stop-color="#fff5e6" stop-opacity="0.9"/>
+      <stop offset="30%" stop-color="#f5a623" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#f5a623" stop-opacity="0"/>
+    </radialGradient>
+    <!-- Sun disc -->
+    <radialGradient id="sunDisc" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%" stop-color="#fff5e6"/>
+      <stop offset="70%" stop-color="#ffcc66"/>
+      <stop offset="100%" stop-color="#f5a623"/>
+    </radialGradient>
+    <!-- Ground gradient -->
+    <linearGradient id="groundGradient" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#5a3e28"/>
+      <stop offset="50%" stop-color="#3d2b1a"/>
+      <stop offset="100%" stop-color="#30211b"/>
+    </linearGradient>
+    <!-- Dust haze -->
+    <linearGradient id="dustHaze" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f5a623" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#f5a623" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Sky -->
+  <rect width="1920" height="800" fill="url(#skyGradient)"/>
+
+  <!-- Sun glow aura -->
+  <rect width="1920" height="800" fill="url(#sunGlow)"/>
+
+  <!-- Sun disc -->
+  <circle cx="960" cy="460" r="80" fill="url(#sunDisc)" opacity="0.95"/>
+  <!-- Sun reflection bands -->
+  <ellipse cx="960" cy="460" rx="120" ry="6" fill="#fff5e6" opacity="0.15"/>
+  <ellipse cx="960" cy="460" rx="200" ry="4" fill="#ffcc66" opacity="0.1"/>
+
+  <!-- Distant mountains - layer 1 (far) -->
+  <path d="M0 520 L120 440 L250 480 L380 400 L500 450 L620 380 L750 430 L850 370 L960 420 L1080 360 L1180 410 L1300 380 L1420 430 L1520 390 L1640 440 L1750 410 L1850 460 L1920 430 L1920 520 Z" fill="#4a1942" opacity="0.5"/>
+
+  <!-- Distant mountains - layer 2 (mid) -->
+  <path d="M0 540 L100 490 L220 510 L350 460 L480 500 L600 450 L720 490 L840 440 L960 480 L1100 430 L1220 470 L1360 450 L1480 490 L1600 460 L1720 500 L1840 470 L1920 510 L1920 540 Z" fill="#6b3a5e" opacity="0.5"/>
+
+  <!-- Hills - layer 3 -->
+  <path d="M0 570 L160 520 L320 545 L500 510 L680 540 L860 505 L1040 535 L1200 515 L1380 540 L1560 510 L1740 535 L1920 520 L1920 570 Z" fill="#7a4830" opacity="0.6"/>
+
+  <!-- Savanna ground -->
+  <path d="M0 560 Q480 540 960 555 Q1440 570 1920 550 L1920 800 L0 800 Z" fill="url(#groundGradient)"/>
+
+  <!-- Dust haze above horizon -->
+  <rect x="0" y="500" width="1920" height="80" fill="url(#dustHaze)"/>
+
+  <!-- Acacia tree - left side (large, detailed) -->
+  <g transform="translate(280, 0)">
+    <!-- Trunk -->
+    <path d="M0 560 Q-5 520 -3 480 Q0 440 -2 400 Q-4 360 0 340" stroke="#30211b" stroke-width="8" fill="none" stroke-linecap="round"/>
+    <!-- Main branches -->
+    <path d="M-2 400 Q-30 370 -70 355" stroke="#30211b" stroke-width="5" fill="none" stroke-linecap="round"/>
+    <path d="M-1 380 Q25 350 65 340" stroke="#30211b" stroke-width="5" fill="none" stroke-linecap="round"/>
+    <path d="M0 360 Q-40 330 -90 325" stroke="#30211b" stroke-width="4" fill="none" stroke-linecap="round"/>
+    <path d="M0 345 Q35 315 80 310" stroke="#30211b" stroke-width="4" fill="none" stroke-linecap="round"/>
+    <path d="M-1 340 Q-10 310 -20 295" stroke="#30211b" stroke-width="3" fill="none" stroke-linecap="round"/>
+    <!-- Sub branches -->
+    <path d="M-70 355 Q-100 345 -130 348" stroke="#30211b" stroke-width="3" fill="none" stroke-linecap="round"/>
+    <path d="M-70 355 Q-85 340 -110 335" stroke="#30211b" stroke-width="2" fill="none" stroke-linecap="round"/>
+    <path d="M65 340 Q95 330 125 333" stroke="#30211b" stroke-width="3" fill="none" stroke-linecap="round"/>
+    <path d="M65 340 Q80 325 105 320" stroke="#30211b" stroke-width="2" fill="none" stroke-linecap="round"/>
+    <path d="M-90 325 Q-120 318 -140 320" stroke="#30211b" stroke-width="2" fill="none" stroke-linecap="round"/>
+    <path d="M80 310 Q110 305 130 308" stroke="#30211b" stroke-width="2" fill="none" stroke-linecap="round"/>
+    <!-- Canopy (flat African acacia shape) -->
+    <ellipse cx="0" cy="320" rx="160" ry="35" fill="#30211b" opacity="0.85"/>
+    <ellipse cx="-20" cy="325" rx="140" ry="30" fill="#3d2b1a" opacity="0.5"/>
+  </g>
+
+  <!-- Acacia tree - right side (smaller, distant) -->
+  <g transform="translate(1550, 0) scale(0.6)">
+    <path d="M0 560 Q-3 520 -2 480 Q1 440 -1 420" stroke="#30211b" stroke-width="6" fill="none" stroke-linecap="round"/>
+    <path d="M-1 450 Q-25 430 -50 425" stroke="#30211b" stroke-width="4" fill="none" stroke-linecap="round"/>
+    <path d="M0 440 Q20 420 45 415" stroke="#30211b" stroke-width="4" fill="none" stroke-linecap="round"/>
+    <path d="M-1 430 Q-30 410 -60 408" stroke="#30211b" stroke-width="3" fill="none" stroke-linecap="round"/>
+    <path d="M0 420 Q25 405 55 403" stroke="#30211b" stroke-width="3" fill="none" stroke-linecap="round"/>
+    <ellipse cx="0" cy="410" rx="100" ry="25" fill="#30211b" opacity="0.85"/>
+  </g>
+
+  <!-- Small distant acacia -->
+  <g transform="translate(1100, 0) scale(0.35)">
+    <path d="M0 560 Q0 520 0 490" stroke="#30211b" stroke-width="5" fill="none" stroke-linecap="round"/>
+    <ellipse cx="0" cy="485" rx="60" ry="18" fill="#30211b" opacity="0.7"/>
+  </g>
+
+  <!-- Safari vehicle (SUV) - center-right -->
+  <g transform="translate(1050, 520)">
+    <!-- Vehicle shadow -->
+    <ellipse cx="70" cy="48" rx="85" ry="8" fill="#30211b" opacity="0.4"/>
+    <!-- Body -->
+    <path d="M0 20 L10 20 L20 0 L110 0 L125 10 L145 10 L145 35 L0 35 Z" fill="#30211b"/>
+    <!-- Roof rack -->
+    <line x1="25" y1="0" x2="105" y2="0" stroke="#4a3525" stroke-width="2"/>
+    <line x1="30" y1="-3" x2="100" y2="-3" stroke="#4a3525" stroke-width="1"/>
+    <line x1="35" y1="0" x2="35" y2="-3" stroke="#4a3525" stroke-width="1"/>
+    <line x1="60" y1="0" x2="60" y2="-3" stroke="#4a3525" stroke-width="1"/>
+    <line x1="85" y1="0" x2="85" y2="-3" stroke="#4a3525" stroke-width="1"/>
+    <!-- Windows -->
+    <path d="M25 5 L35 5 L35 18 L22 18 Z" fill="#c2442d" opacity="0.4"/>
+    <rect x="40" y="5" width="25" height="13" rx="1" fill="#c2442d" opacity="0.4"/>
+    <rect x="70" y="5" width="25" height="13" rx="1" fill="#c2442d" opacity="0.4"/>
+    <rect x="100" y="8" width="20" height="10" rx="1" fill="#c2442d" opacity="0.3"/>
+    <!-- Bumper details -->
+    <rect x="-5" y="28" width="15" height="5" rx="2" fill="#4a3525"/>
+    <rect x="135" y="28" width="15" height="5" rx="2" fill="#4a3525"/>
+    <!-- Wheels -->
+    <circle cx="35" cy="38" r="12" fill="#1a1a1a"/>
+    <circle cx="35" cy="38" r="8" fill="#333"/>
+    <circle cx="35" cy="38" r="3" fill="#555"/>
+    <circle cx="115" cy="38" r="12" fill="#1a1a1a"/>
+    <circle cx="115" cy="38" r="8" fill="#333"/>
+    <circle cx="115" cy="38" r="3" fill="#555"/>
+    <!-- Headlights -->
+    <rect x="140" y="15" width="5" height="6" rx="1" fill="#f5a623" opacity="0.7"/>
+    <rect x="140" y="25" width="5" height="4" rx="1" fill="#c2442d" opacity="0.5"/>
+  </g>
+
+  <!-- Grass tufts in foreground -->
+  <g fill="#5a3e28" opacity="0.7">
+    <path d="M50 600 Q55 575 52 560 Q60 570 65 600"/>
+    <path d="M48 600 Q45 580 50 565 Q40 575 38 600"/>
+    <path d="M200 590 Q205 565 202 550 Q210 560 215 590"/>
+    <path d="M400 605 Q405 580 402 565 Q410 575 415 605"/>
+    <path d="M600 595 Q605 570 602 555 Q610 565 615 595"/>
+    <path d="M850 610 Q855 585 852 570 Q860 580 865 610"/>
+    <path d="M1300 600 Q1305 575 1302 560 Q1310 570 1315 600"/>
+    <path d="M1500 595 Q1505 570 1502 555 Q1510 565 1515 595"/>
+    <path d="M1700 605 Q1705 580 1702 565 Q1710 575 1715 605"/>
+    <path d="M1850 598 Q1855 573 1852 558 Q1860 568 1865 598"/>
+  </g>
+
+  <!-- Additional grass detail -->
+  <g fill="#6b4c30" opacity="0.5">
+    <path d="M100 610 Q108 585 105 570 Q115 580 120 610"/>
+    <path d="M300 600 Q308 575 305 560 Q315 570 320 600"/>
+    <path d="M500 615 Q508 590 505 575 Q515 585 520 615"/>
+    <path d="M700 605 Q708 580 705 565 Q715 575 720 605"/>
+    <path d="M1000 610 Q1008 585 1005 570 Q1015 580 1020 610"/>
+    <path d="M1400 608 Q1408 583 1405 568 Q1415 578 1420 608"/>
+    <path d="M1600 612 Q1608 587 1605 572 Q1615 582 1620 612"/>
+  </g>
+
+  <!-- Birds in sky -->
+  <g stroke="#30211b" stroke-width="1.5" fill="none" opacity="0.4">
+    <path d="M750 200 Q755 195 760 200 Q765 195 770 200"/>
+    <path d="M780 215 Q784 211 788 215 Q792 211 796 215"/>
+    <path d="M1200 180 Q1205 175 1210 180 Q1215 175 1220 180"/>
+    <path d="M1150 195 Q1154 191 1158 195 Q1162 191 1166 195"/>
+    <path d="M900 170 Q904 166 908 170 Q912 166 916 170"/>
+  </g>
+
+  <!-- Subtle cloud wisps -->
+  <g fill="#fff5e6" opacity="0.08">
+    <ellipse cx="300" cy="120" rx="200" ry="15"/>
+    <ellipse cx="1500" cy="100" rx="180" ry="12"/>
+    <ellipse cx="800" cy="150" rx="120" ry="10"/>
+  </g>
+</svg>
