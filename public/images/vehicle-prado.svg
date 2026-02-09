@@ -1,0 +1,131 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="600" height="400">
+  <defs>
+    <linearGradient id="prBg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f0e4d4"/>
+      <stop offset="100%" stop-color="#e0d0bc"/>
+    </linearGradient>
+    <linearGradient id="prBody" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#3d2b1a"/>
+      <stop offset="50%" stop-color="#30211b"/>
+      <stop offset="100%" stop-color="#261a12"/>
+    </linearGradient>
+    <linearGradient id="prGround" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#c9a882"/>
+      <stop offset="100%" stop-color="#b8956e"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="600" height="400" fill="url(#prBg)"/>
+  <circle cx="480" cy="340" r="140" fill="#d4b896" opacity="0.2"/>
+  <circle cx="120" cy="360" r="100" fill="#d4b896" opacity="0.15"/>
+
+  <!-- Ground -->
+  <rect x="0" y="315" width="600" height="85" fill="url(#prGround)"/>
+
+  <!-- Shadow -->
+  <ellipse cx="300" cy="314" rx="165" ry="10" fill="#8a7560" opacity="0.35"/>
+
+  <!-- Toyota Prado - sleeker SUV profile -->
+  <g transform="translate(110, 140)">
+    <!-- Undercarriage -->
+    <rect x="40" y="148" width="310" height="10" rx="3" fill="#1a1410"/>
+
+    <!-- Body - sleeker curved shape -->
+    <path d="M55 60 L55 152 L365 152 L365 75 L350 60 L280 60 Q275 35 265 25 L135 25 Q125 35 120 60 Z" fill="url(#prBody)"/>
+
+    <!-- Roof line (slightly curved) -->
+    <path d="M135 25 Q200 20 265 25" fill="none" stroke="#4a3525" stroke-width="1"/>
+
+    <!-- Windshield (more raked) -->
+    <path d="M263 28 Q278 55 280 60 L125 60 Q127 55 140 28 Z" fill="#8b7355" opacity="0.65"/>
+
+    <!-- Front quarter window -->
+    <path d="M280 45 L295 60 L280 60 Z" fill="#8b7355" opacity="0.5"/>
+
+    <!-- Side windows - sleeker proportion -->
+    <rect x="130" y="32" width="55" height="24" rx="3" fill="#8b7355" opacity="0.55"/>
+    <rect x="190" y="32" width="48" height="24" rx="3" fill="#8b7355" opacity="0.55"/>
+    <rect x="243" y="32" width="32" height="24" rx="3" fill="#8b7355" opacity="0.5"/>
+
+    <!-- Window pillars -->
+    <line x1="185" y1="26" x2="185" y2="60" stroke="#30211b" stroke-width="4"/>
+    <line x1="238" y1="26" x2="240" y2="60" stroke="#30211b" stroke-width="4"/>
+
+    <!-- Belt line chrome strip -->
+    <line x1="58" y1="60" x2="363" y2="60" stroke="#7a6a55" stroke-width="2"/>
+
+    <!-- Door lines -->
+    <line x1="185" y1="60" x2="185" y2="148" stroke="#3d2b1a" stroke-width="1.5"/>
+    <line x1="270" y1="60" x2="270" y2="148" stroke="#3d2b1a" stroke-width="1.5"/>
+
+    <!-- Door handles (chrome) -->
+    <rect x="195" y="85" width="14" height="4" rx="2" fill="#8a7a65"/>
+    <rect x="240" y="85" width="14" height="4" rx="2" fill="#8a7a65"/>
+
+    <!-- Hood -->
+    <path d="M280 60 L350 60 L365 75 L365 115 L280 115 Z" fill="#352518" opacity="0.7"/>
+    <line x1="320" y1="62" x2="320" y2="112" stroke="#3d2b1a" stroke-width="0.8"/>
+
+    <!-- Front grille -->
+    <rect x="358" y="75" width="12" height="65" rx="2" fill="#30211b"/>
+    <line x1="360" y1="82" x2="368" y2="82" stroke="#5a4a3a" stroke-width="1"/>
+    <line x1="360" y1="88" x2="368" y2="88" stroke="#5a4a3a" stroke-width="1"/>
+    <line x1="360" y1="94" x2="368" y2="94" stroke="#5a4a3a" stroke-width="1"/>
+    <line x1="360" y1="100" x2="368" y2="100" stroke="#5a4a3a" stroke-width="1"/>
+    <line x1="360" y1="106" x2="368" y2="106" stroke="#5a4a3a" stroke-width="1"/>
+    <line x1="360" y1="112" x2="368" y2="112" stroke="#5a4a3a" stroke-width="1"/>
+
+    <!-- Headlights -->
+    <path d="M360 78 L370 78 L370 95 L360 95 Z" fill="#f5d799" opacity="0.7"/>
+    <rect x="360" y="120" width="8" height="10" rx="2" fill="#d4792a" opacity="0.5"/>
+
+    <!-- Fog lights -->
+    <circle cx="365" cy="135" r="4" fill="#f5d799" opacity="0.4"/>
+
+    <!-- Rear -->
+    <rect x="50" y="60" width="8" height="80" rx="2" fill="#2a1c12"/>
+    <rect x="51" y="65" width="5" height="18" rx="2" fill="#c2442d" opacity="0.6"/>
+    <rect x="51" y="88" width="5" height="10" rx="2" fill="#f5d799" opacity="0.4"/>
+
+    <!-- Wheel arches (rounded) -->
+    <path d="M65 125 Q65 100 95 93 Q120 88 140 95 Q158 105 158 125" fill="#1a1410" stroke="#30211b" stroke-width="2"/>
+    <path d="M268 125 Q268 100 298 93 Q323 88 343 95 Q361 105 361 125" fill="#1a1410" stroke="#30211b" stroke-width="2"/>
+
+    <!-- Rear wheel -->
+    <circle cx="110" cy="152" r="27" fill="#1a1410"/>
+    <circle cx="110" cy="152" r="22" fill="#2a2018"/>
+    <circle cx="110" cy="152" r="17" fill="#383028"/>
+    <circle cx="110" cy="152" r="6" fill="#5a5550"/>
+    <!-- Spokes -->
+    <g stroke="#4a4540" stroke-width="2.5">
+      <line x1="110" y1="138" x2="110" y2="166"/>
+      <line x1="96" y1="152" x2="124" y2="152"/>
+      <line x1="100" y1="142" x2="120" y2="162"/>
+      <line x1="120" y1="142" x2="100" y2="162"/>
+    </g>
+
+    <!-- Front wheel -->
+    <circle cx="315" cy="152" r="27" fill="#1a1410"/>
+    <circle cx="315" cy="152" r="22" fill="#2a2018"/>
+    <circle cx="315" cy="152" r="17" fill="#383028"/>
+    <circle cx="315" cy="152" r="6" fill="#5a5550"/>
+    <g stroke="#4a4540" stroke-width="2.5">
+      <line x1="315" y1="138" x2="315" y2="166"/>
+      <line x1="301" y1="152" x2="329" y2="152"/>
+      <line x1="305" y1="142" x2="325" y2="162"/>
+      <line x1="325" y1="142" x2="305" y2="162"/>
+    </g>
+
+    <!-- Running board -->
+    <rect x="155" y="147" width="115" height="3" rx="1" fill="#4a3525"/>
+
+    <!-- Roof rails -->
+    <rect x="135" y="22" width="130" height="3" rx="1.5" fill="#5a4a3a"/>
+    <rect x="145" y="19" width="4" height="5" rx="1" fill="#5a4a3a"/>
+    <rect x="250" y="19" width="4" height="5" rx="1" fill="#5a4a3a"/>
+  </g>
+
+  <!-- Label -->
+  <text x="300" y="378" text-anchor="middle" font-family="Georgia, serif" font-size="16" fill="#6b4c30" font-weight="bold" letter-spacing="2">TOYOTA PRADO</text>
+</svg>

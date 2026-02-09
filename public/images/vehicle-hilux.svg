@@ -1,0 +1,133 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="600" height="400">
+  <defs>
+    <linearGradient id="hxBg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f2e6d6"/>
+      <stop offset="100%" stop-color="#e2d2be"/>
+    </linearGradient>
+    <linearGradient id="hxBody" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#4a3525"/>
+      <stop offset="100%" stop-color="#30211b"/>
+    </linearGradient>
+    <linearGradient id="hxTent" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#8b6b42"/>
+      <stop offset="50%" stop-color="#7a5c38"/>
+      <stop offset="100%" stop-color="#6b4d30"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="600" height="400" fill="url(#hxBg)"/>
+  <circle cx="450" cy="350" r="130" fill="#d4b896" opacity="0.2"/>
+
+  <!-- Ground -->
+  <rect x="0" y="318" width="600" height="82" fill="#c9a882"/>
+  <rect x="0" y="340" width="600" height="60" fill="#b8956e"/>
+
+  <!-- Shadow -->
+  <ellipse cx="290" cy="317" rx="180" ry="10" fill="#8a7560" opacity="0.35"/>
+
+  <!-- Toyota Hilux with rooftop tent -->
+  <g transform="translate(85, 115)">
+    <!-- Undercarriage -->
+    <rect x="40" y="168" width="350" height="10" rx="3" fill="#1a1410"/>
+
+    <!-- Pickup bed -->
+    <path d="M50 90 L50 172 L200 172 L200 80 Z" fill="url(#hxBody)"/>
+    <!-- Bed wall inner -->
+    <rect x="55" y="95" width="142" height="72" fill="#3d2b1a"/>
+    <!-- Bed rails -->
+    <line x1="50" y1="90" x2="200" y2="80" stroke="#5a4535" stroke-width="2"/>
+
+    <!-- Cabin -->
+    <path d="M195 80 L195 172 L340 172 L340 90 L325 75 L285 75 Q280 50 270 40 L220 40 Q210 50 208 75 L200 80 Z" fill="url(#hxBody)"/>
+
+    <!-- Windshield -->
+    <path d="M268 43 Q280 68 285 75 L212 75 Q214 68 225 43 Z" fill="#8b7355" opacity="0.65"/>
+
+    <!-- Side windows -->
+    <rect x="218" y="47" width="46" height="24" rx="2" fill="#8b7355" opacity="0.55"/>
+
+    <!-- Window pillar -->
+    <line x1="208" y1="40" x2="208" y2="80" stroke="#30211b" stroke-width="4"/>
+
+    <!-- Door line -->
+    <line x1="265" y1="75" x2="265" y2="170" stroke="#3d2b1a" stroke-width="1.5"/>
+
+    <!-- Door handle -->
+    <rect x="235" y="105" width="14" height="4" rx="2" fill="#6b5a45"/>
+
+    <!-- Hood -->
+    <path d="M285 75 L325 75 L340 90 L340 135 L285 135 Z" fill="#352518"/>
+    <line x1="310" y1="77" x2="310" y2="133" stroke="#3d2b1a" stroke-width="0.8"/>
+
+    <!-- Front grille -->
+    <rect x="335" y="90" width="12" height="70" rx="2" fill="#30211b"/>
+    <line x1="337" y1="97" x2="345" y2="97" stroke="#5a4a3a" stroke-width="1"/>
+    <line x1="337" y1="103" x2="345" y2="103" stroke="#5a4a3a" stroke-width="1"/>
+    <line x1="337" y1="109" x2="345" y2="109" stroke="#5a4a3a" stroke-width="1"/>
+    <line x1="337" y1="115" x2="345" y2="115" stroke="#5a4a3a" stroke-width="1"/>
+
+    <!-- Headlights -->
+    <rect x="338" y="92" width="7" height="12" rx="2" fill="#f5d799" opacity="0.7"/>
+    <rect x="338" y="135" width="7" height="10" rx="2" fill="#d4792a" opacity="0.5"/>
+
+    <!-- Front bumper -->
+    <rect x="338" y="155" width="15" height="12" rx="2" fill="#3d2b1a"/>
+
+    <!-- Rear -->
+    <rect x="44" y="95" width="8" height="65" rx="2" fill="#2a1c12"/>
+    <rect x="45" y="100" width="5" height="15" rx="2" fill="#c2442d" opacity="0.6"/>
+
+    <!-- Wheel arches -->
+    <path d="M60 145 Q60 120 90 113 Q115 108 135 115 Q155 125 155 145" fill="#1a1410"/>
+    <path d="M275 145 Q275 120 305 113 Q330 108 350 115 Q368 125 368 145" fill="#1a1410"/>
+
+    <!-- Rear wheel -->
+    <circle cx="108" cy="172" r="27" fill="#1a1410"/>
+    <circle cx="108" cy="172" r="22" fill="#2a2018"/>
+    <circle cx="108" cy="172" r="17" fill="#383028"/>
+    <circle cx="108" cy="172" r="6" fill="#5a5550"/>
+    <g stroke="#4a4540" stroke-width="2.5">
+      <line x1="108" y1="158" x2="108" y2="186"/>
+      <line x1="94" y1="172" x2="122" y2="172"/>
+      <line x1="98" y1="162" x2="118" y2="182"/>
+      <line x1="118" y1="162" x2="98" y2="182"/>
+    </g>
+
+    <!-- Front wheel -->
+    <circle cx="322" cy="172" r="27" fill="#1a1410"/>
+    <circle cx="322" cy="172" r="22" fill="#2a2018"/>
+    <circle cx="322" cy="172" r="17" fill="#383028"/>
+    <circle cx="322" cy="172" r="6" fill="#5a5550"/>
+    <g stroke="#4a4540" stroke-width="2.5">
+      <line x1="322" y1="158" x2="322" y2="186"/>
+      <line x1="308" y1="172" x2="336" y2="172"/>
+      <line x1="312" y1="162" x2="332" y2="182"/>
+      <line x1="332" y1="162" x2="312" y2="182"/>
+    </g>
+
+    <!-- Rooftop tent (folded, on bed) -->
+    <rect x="55" y="68" width="140" height="22" rx="3" fill="url(#hxTent)"/>
+    <!-- Tent top surface -->
+    <rect x="55" y="65" width="140" height="6" rx="2" fill="#8b6b42"/>
+    <!-- Tent straps -->
+    <rect x="85" y="65" width="4" height="25" rx="1" fill="#5a4535"/>
+    <rect x="155" y="65" width="4" height="25" rx="1" fill="#5a4535"/>
+    <!-- Tent zipper line -->
+    <line x1="60" y1="78" x2="190" y2="78" stroke="#6b5040" stroke-width="1"/>
+
+    <!-- Tent ladder (folded, subtle) -->
+    <rect x="58" y="72" width="3" height="18" rx="1" fill="#5a4a3a" opacity="0.6"/>
+
+    <!-- Bed rack supports -->
+    <rect x="60" y="85" width="3" height="8" fill="#4a3525"/>
+    <rect x="120" y="83" width="3" height="10" fill="#4a3525"/>
+    <rect x="185" y="85" width="3" height="8" fill="#4a3525"/>
+
+    <!-- Running board -->
+    <rect x="155" y="167" width="120" height="3" rx="1" fill="#4a3525"/>
+  </g>
+
+  <!-- Label -->
+  <text x="300" y="380" text-anchor="middle" font-family="Georgia, serif" font-size="16" fill="#6b4c30" font-weight="bold" letter-spacing="2">HILUX WITH ROOFTOP TENT</text>
+</svg>

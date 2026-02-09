@@ -1,0 +1,121 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="600" height="400">
+  <defs>
+    <linearGradient id="r4Bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f2e8da"/>
+      <stop offset="100%" stop-color="#e4d6c4"/>
+    </linearGradient>
+    <linearGradient id="r4Body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#4a3525"/>
+      <stop offset="100%" stop-color="#30211b"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="600" height="400" fill="url(#r4Bg)"/>
+  <circle cx="150" cy="340" r="120" fill="#d4b896" opacity="0.2"/>
+  <circle cx="500" cy="350" r="100" fill="#d4b896" opacity="0.15"/>
+
+  <!-- Ground -->
+  <rect x="0" y="315" width="600" height="85" fill="#c9a882"/>
+  <rect x="0" y="340" width="600" height="60" fill="#b8956e"/>
+
+  <!-- Shadow -->
+  <ellipse cx="300" cy="314" rx="148" ry="9" fill="#8a7560" opacity="0.35"/>
+
+  <!-- RAV4 - compact SUV profile -->
+  <g transform="translate(125, 145)">
+    <!-- Undercarriage -->
+    <rect x="35" y="145" width="290" height="9" rx="3" fill="#1a1410"/>
+
+    <!-- Body - compact, modern shape -->
+    <path d="M50 65 L50 148 L340 148 L340 80 L328 68 L270 65 Q265 38 255 28 L140 28 Q130 38 125 65 Z" fill="url(#r4Body)"/>
+
+    <!-- Roof line (sporty curve) -->
+    <path d="M140 28 Q195 22 255 28" fill="none" stroke="#3d2b1a" stroke-width="1"/>
+
+    <!-- Windshield (well-raked) -->
+    <path d="M253 30 Q267 58 270 65 L128 65 Q130 58 143 30 Z" fill="#8b7355" opacity="0.65"/>
+
+    <!-- Side windows -->
+    <rect x="135" y="34" width="42" height="26" rx="3" fill="#8b7355" opacity="0.55"/>
+    <rect x="182" y="34" width="42" height="26" rx="3" fill="#8b7355" opacity="0.55"/>
+    <!-- Rear quarter window (triangular) -->
+    <path d="M228 34 L252 34 Q258 50 260 62 L228 62 Z" fill="#8b7355" opacity="0.5"/>
+
+    <!-- Window pillars -->
+    <line x1="177" y1="28" x2="177" y2="65" stroke="#30211b" stroke-width="4"/>
+    <line x1="224" y1="28" x2="226" y2="65" stroke="#30211b" stroke-width="4"/>
+
+    <!-- Belt line -->
+    <line x1="52" y1="65" x2="338" y2="65" stroke="#5a4535" stroke-width="1.5"/>
+
+    <!-- Character line (body crease) -->
+    <path d="M55 95 L335 90" stroke="#3d2b1a" stroke-width="1" opacity="0.6"/>
+
+    <!-- Door lines -->
+    <line x1="177" y1="65" x2="177" y2="145" stroke="#3d2b1a" stroke-width="1.5"/>
+    <line x1="260" y1="65" x2="260" y2="145" stroke="#3d2b1a" stroke-width="1.5"/>
+
+    <!-- Door handles -->
+    <rect x="188" y="88" width="12" height="3" rx="1.5" fill="#6b5a45"/>
+    <rect x="232" y="88" width="12" height="3" rx="1.5" fill="#6b5a45"/>
+
+    <!-- Hood -->
+    <path d="M270 65 L328 68 L340 80 L340 120 L270 120 Z" fill="#352518" opacity="0.7"/>
+
+    <!-- Front fascia -->
+    <rect x="335" y="80" width="10" height="60" rx="2" fill="#30211b"/>
+    <!-- Slim headlights (modern design) -->
+    <path d="M337 82 L343 82 L343 96 L337 96 Z" fill="#f5d799" opacity="0.7"/>
+    <!-- Lower grille -->
+    <rect x="337" y="108" width="6" height="25" rx="2" fill="#3d2b1a"/>
+    <!-- Fog/DRL -->
+    <rect x="338" y="100" width="4" height="3" rx="1" fill="#f5d799" opacity="0.5"/>
+
+    <!-- Rear -->
+    <path d="M45 65 L55 65 L55 140 L45 140 Z" fill="#2a1c12"/>
+    <!-- Tail lights (wrap-around style) -->
+    <rect x="46" y="68" width="5" height="20" rx="2" fill="#c2442d" opacity="0.6"/>
+    <rect x="46" y="92" width="5" height="8" rx="1" fill="#f5d799" opacity="0.4"/>
+
+    <!-- Rear spoiler -->
+    <rect x="130" y="25" width="130" height="3" rx="1.5" fill="#30211b"/>
+
+    <!-- Wheel arches (rounded, modern) -->
+    <path d="M65 125 Q65 102 90 95 Q112 90 130 97 Q148 107 148 125" fill="#1a1410"/>
+    <path d="M260 125 Q260 102 285 95 Q307 90 325 97 Q343 107 343 125" fill="#1a1410"/>
+
+    <!-- Rear wheel -->
+    <circle cx="106" cy="148" r="25" fill="#1a1410"/>
+    <circle cx="106" cy="148" r="20" fill="#2a2018"/>
+    <circle cx="106" cy="148" r="15" fill="#383028"/>
+    <circle cx="106" cy="148" r="5" fill="#5a5550"/>
+    <!-- 5-spoke design -->
+    <g stroke="#4a4540" stroke-width="2.5">
+      <line x1="106" y1="135" x2="106" y2="161"/>
+      <line x1="93" y1="148" x2="119" y2="148"/>
+      <line x1="97" y1="139" x2="115" y2="157"/>
+      <line x1="115" y1="139" x2="97" y2="157"/>
+    </g>
+
+    <!-- Front wheel -->
+    <circle cx="302" cy="148" r="25" fill="#1a1410"/>
+    <circle cx="302" cy="148" r="20" fill="#2a2018"/>
+    <circle cx="302" cy="148" r="15" fill="#383028"/>
+    <circle cx="302" cy="148" r="5" fill="#5a5550"/>
+    <g stroke="#4a4540" stroke-width="2.5">
+      <line x1="302" y1="135" x2="302" y2="161"/>
+      <line x1="289" y1="148" x2="315" y2="148"/>
+      <line x1="293" y1="139" x2="311" y2="157"/>
+      <line x1="311" y1="139" x2="293" y2="157"/>
+    </g>
+
+    <!-- Roof rails -->
+    <rect x="140" y="24" width="115" height="2.5" rx="1.2" fill="#5a4a3a"/>
+    <rect x="148" y="21" width="3" height="5" rx="1" fill="#5a4a3a"/>
+    <rect x="248" y="21" width="3" height="5" rx="1" fill="#5a4a3a"/>
+  </g>
+
+  <!-- Label -->
+  <text x="300" y="378" text-anchor="middle" font-family="Georgia, serif" font-size="16" fill="#6b4c30" font-weight="bold" letter-spacing="2">TOYOTA RAV4</text>
+</svg>

@@ -1,0 +1,76 @@
+---
+import { getLangFromUrl, useTranslations } from '../i18n/utils';
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+
+const steps = [
+  {
+    number: '01',
+    title: t('howItWorks.step1.title'),
+    description: t('howItWorks.step1.description'),
+    icon: `<path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>`,
+  },
+  {
+    number: '02',
+    title: t('howItWorks.step2.title'),
+    description: t('howItWorks.step2.description'),
+    icon: `<path d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/>`,
+  },
+  {
+    number: '03',
+    title: t('howItWorks.step3.title'),
+    description: t('howItWorks.step3.description'),
+    icon: `<path d="M5 3l14 9-14 9V3z"/>`,
+  },
+];
+---
+
+<section class="py-20 lg:py-28 bg-brand-950 relative overflow-hidden">
+  <!-- Background pattern -->
+  <div class="absolute inset-0 opacity-5">
+    <svg class="w-full h-full" viewBox="0 0 100 100" preserveAspectRatio="none">
+      <defs>
+        <pattern id="dots" x="0" y="0" width="10" height="10" patternUnits="userSpaceOnUse">
+          <circle cx="1" cy="1" r="0.5" fill="white"/>
+        </pattern>
+      </defs>
+      <rect fill="url(#dots)" width="100" height="100"/>
+    </svg>
+  </div>
+
+  <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <!-- Section Header -->
+    <div class="text-center mb-16">
+      <span class="inline-block text-brand-400 font-semibold text-sm uppercase tracking-widest mb-3">{t('howItWorks.title')}</span>
+      <h2 class="font-display text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">{t('howItWorks.subtitle')}</h2>
+      <div class="w-20 h-1 bg-brand-500 mx-auto rounded-full"></div>
+    </div>
+
+    <!-- Steps -->
+    <div class="grid md:grid-cols-3 gap-8 lg:gap-12">
+      {steps.map((step, i) => (
+        <div class="relative text-center">
+          {/* Connector line (hidden on last item and mobile) */}
+          {i < 2 && (
+            <div class="hidden md:block absolute top-12 left-[60%] w-[80%] h-px bg-gradient-to-r from-brand-500 to-brand-500/0"></div>
+          )}
+
+          <div class="relative inline-flex items-center justify-center w-24 h-24 mb-6">
+            <div class="absolute inset-0 bg-brand-500/20 rounded-full"></div>
+            <div class="absolute inset-2 bg-brand-500/30 rounded-full"></div>
+            <div class="relative w-16 h-16 bg-brand-500 rounded-full flex items-center justify-center">
+              <svg class="w-8 h-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <Fragment set:html={step.icon} />
+              </svg>
+            </div>
+            <span class="absolute -top-2 -right-2 w-8 h-8 bg-white text-brand-950 rounded-full flex items-center justify-center text-sm font-black">{step.number}</span>
+          </div>
+
+          <h3 class="text-xl font-bold text-white mb-3">{step.title}</h3>
+          <p class="text-white/60 leading-relaxed max-w-sm mx-auto">{step.description}</p>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>

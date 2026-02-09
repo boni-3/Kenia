@@ -1,0 +1,146 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <defs>
+    <linearGradient id="mmSky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#2a1540"/>
+      <stop offset="20%" stop-color="#8b3a62"/>
+      <stop offset="40%" stop-color="#d4792a"/>
+      <stop offset="60%" stop-color="#f5a623"/>
+      <stop offset="80%" stop-color="#f7d794"/>
+      <stop offset="100%" stop-color="#ffeaa7"/>
+    </linearGradient>
+    <radialGradient id="mmSun" cx="0.7" cy="0.55" r="0.3">
+      <stop offset="0%" stop-color="#fff5e6" stop-opacity="0.8"/>
+      <stop offset="50%" stop-color="#f5a623" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#f5a623" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="mmGround" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#8b7a42"/>
+      <stop offset="40%" stop-color="#6b5a30"/>
+      <stop offset="100%" stop-color="#4a3d20"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Sky -->
+  <rect width="800" height="500" fill="url(#mmSky)"/>
+  <rect width="800" height="500" fill="url(#mmSun)"/>
+
+  <!-- Sun -->
+  <circle cx="560" cy="250" r="45" fill="#ffcc66" opacity="0.9"/>
+  <circle cx="560" cy="250" r="38" fill="#fff5e6" opacity="0.6"/>
+
+  <!-- Distant hills -->
+  <path d="M0 300 Q100 270 200 285 Q300 260 400 280 Q500 255 600 275 Q700 260 800 280 L800 320 L0 320 Z" fill="#6b3a5e" opacity="0.4"/>
+
+  <!-- Mid hills -->
+  <path d="M0 310 Q80 290 180 305 Q280 285 380 300 Q500 280 620 295 Q720 285 800 300 L800 340 L0 340 Z" fill="#7a5030" opacity="0.5"/>
+
+  <!-- Savanna ground -->
+  <path d="M0 330 Q200 320 400 330 Q600 325 800 335 L800 500 L0 500 Z" fill="url(#mmGround)"/>
+
+  <!-- Tall grass texture -->
+  <g stroke="#9b8a50" stroke-width="1" opacity="0.4">
+    <line x1="20" y1="500" x2="22" y2="470"/>
+    <line x1="25" y1="500" x2="28" y2="475"/>
+    <line x1="30" y1="500" x2="27" y2="468"/>
+    <line x1="60" y1="500" x2="63" y2="472"/>
+    <line x1="65" y1="500" x2="62" y2="465"/>
+    <line x1="100" y1="500" x2="103" y2="468"/>
+    <line x1="105" y1="500" x2="102" y2="475"/>
+    <line x1="150" y1="500" x2="153" y2="470"/>
+    <line x1="200" y1="500" x2="198" y2="465"/>
+    <line x1="250" y1="500" x2="253" y2="472"/>
+    <line x1="300" y1="500" x2="297" y2="468"/>
+    <line x1="350" y1="495" x2="352" y2="465"/>
+    <line x1="400" y1="498" x2="403" y2="470"/>
+    <line x1="450" y1="500" x2="448" y2="472"/>
+    <line x1="500" y1="498" x2="502" y2="468"/>
+    <line x1="550" y1="500" x2="553" y2="475"/>
+    <line x1="600" y1="498" x2="597" y2="470"/>
+    <line x1="650" y1="500" x2="652" y2="472"/>
+    <line x1="700" y1="500" x2="698" y2="468"/>
+    <line x1="750" y1="498" x2="752" y2="470"/>
+    <line x1="780" y1="500" x2="782" y2="475"/>
+  </g>
+
+  <!-- Acacia tree - right side -->
+  <g transform="translate(650, 0)">
+    <path d="M0 500 Q-2 460 -1 420 Q1 380 -1 360 Q-2 340 0 320" stroke="#30211b" stroke-width="6" fill="none"/>
+    <path d="M-1 360 Q-25 340 -55 332" stroke="#30211b" stroke-width="4" fill="none"/>
+    <path d="M0 345 Q22 325 50 318" stroke="#30211b" stroke-width="4" fill="none"/>
+    <path d="M-1 330 Q-30 310 -65 305" stroke="#30211b" stroke-width="3" fill="none"/>
+    <path d="M0 325 Q28 308 60 303" stroke="#30211b" stroke-width="3" fill="none"/>
+    <path d="M-55 332 Q-80 325 -100 328" stroke="#30211b" stroke-width="2" fill="none"/>
+    <path d="M50 318 Q75 312 95 315" stroke="#30211b" stroke-width="2" fill="none"/>
+    <ellipse cx="0" cy="308" rx="115" ry="28" fill="#30211b" opacity="0.85"/>
+  </g>
+
+  <!-- Smaller acacia - left-center -->
+  <g transform="translate(180, 0) scale(0.55)">
+    <path d="M0 600 Q0 560 0 520 Q0 490 0 470" stroke="#30211b" stroke-width="5" fill="none"/>
+    <path d="M0 500 Q-20 480 -40 475" stroke="#30211b" stroke-width="3" fill="none"/>
+    <path d="M0 490 Q18 472 35 468" stroke="#30211b" stroke-width="3" fill="none"/>
+    <ellipse cx="0" cy="465" rx="65" ry="18" fill="#30211b" opacity="0.8"/>
+  </g>
+
+  <!-- Wildebeest herd silhouettes -->
+  <!-- Wildebeest 1 (large, foreground) -->
+  <g transform="translate(200, 370)">
+    <path d="M0 0 Q-5 -15 -3 -30 Q0 -40 5 -45 L8 -48 Q12 -50 15 -48 L25 -45 Q30 -40 32 -30 Q35 -20 30 -10 Q25 0 20 5 L18 25 L15 25 L16 5 L10 5 L9 25 L6 25 L8 5 Q3 2 0 0 Z" fill="#30211b" opacity="0.85"/>
+    <!-- Horns -->
+    <path d="M8 -48 Q5 -55 3 -58" stroke="#30211b" stroke-width="1.5" fill="none"/>
+    <path d="M15 -48 Q18 -55 20 -58" stroke="#30211b" stroke-width="1.5" fill="none"/>
+  </g>
+
+  <!-- Wildebeest 2 -->
+  <g transform="translate(260, 375) scale(0.85)">
+    <path d="M0 0 Q-5 -15 -3 -30 Q0 -40 5 -45 L8 -48 Q12 -50 15 -48 L25 -45 Q30 -40 32 -30 Q35 -20 30 -10 Q25 0 20 5 L18 25 L15 25 L16 5 L10 5 L9 25 L6 25 L8 5 Q3 2 0 0 Z" fill="#30211b" opacity="0.8"/>
+    <path d="M8 -48 Q5 -55 3 -58" stroke="#30211b" stroke-width="1.5" fill="none"/>
+    <path d="M15 -48 Q18 -55 20 -58" stroke="#30211b" stroke-width="1.5" fill="none"/>
+  </g>
+
+  <!-- Wildebeest 3 (walking) -->
+  <g transform="translate(310, 378) scale(0.75)">
+    <path d="M0 0 Q-5 -15 -3 -30 Q0 -40 5 -45 L8 -48 Q12 -50 15 -48 L25 -45 Q30 -40 32 -30 Q35 -20 30 -10 Q25 0 20 5 L20 25 L17 25 L17 8 L14 5 L11 8 L11 25 L8 25 L7 5 Q3 2 0 0 Z" fill="#30211b" opacity="0.75"/>
+    <path d="M8 -48 Q5 -54 3 -57" stroke="#30211b" stroke-width="1.5" fill="none"/>
+    <path d="M15 -48 Q18 -54 20 -57" stroke="#30211b" stroke-width="1.5" fill="none"/>
+  </g>
+
+  <!-- Wildebeest 4 (distant) -->
+  <g transform="translate(400, 365) scale(0.55)">
+    <path d="M0 0 Q-5 -15 -3 -30 Q0 -40 5 -45 L8 -48 Q12 -50 15 -48 L25 -45 Q30 -40 32 -30 Q35 -20 30 -10 Q25 0 20 5 L18 22 L15 22 L16 5 L10 5 L9 22 L6 22 L8 5 Q3 2 0 0 Z" fill="#30211b" opacity="0.6"/>
+    <path d="M8 -48 Q5 -54 4 -56" stroke="#30211b" stroke-width="1" fill="none"/>
+    <path d="M15 -48 Q18 -54 19 -56" stroke="#30211b" stroke-width="1" fill="none"/>
+  </g>
+
+  <!-- Wildebeest 5 (distant) -->
+  <g transform="translate(445, 362) scale(0.5)">
+    <path d="M0 0 Q-5 -15 -3 -30 Q0 -40 5 -45 L8 -48 Q12 -50 15 -48 L25 -45 Q30 -40 32 -30 Q35 -20 30 -10 Q25 0 20 5 L18 22 L15 22 L16 5 L10 5 L9 22 L6 22 L8 5 Q3 2 0 0 Z" fill="#30211b" opacity="0.55"/>
+  </g>
+
+  <!-- Wildebeest 6 (very distant line) -->
+  <g transform="translate(350, 345) scale(0.3)">
+    <path d="M0 0 Q-3 -12 0 -30 Q3 -38 8 -42 L15 -42 Q22 -38 25 -30 Q28 -12 20 5 L18 18 L15 18 L16 5 L10 5 L9 18 L6 18 L8 5 Z" fill="#30211b" opacity="0.4"/>
+  </g>
+  <g transform="translate(370, 343) scale(0.3)">
+    <path d="M0 0 Q-3 -12 0 -30 Q3 -38 8 -42 L15 -42 Q22 -38 25 -30 Q28 -12 20 5 L18 18 L15 18 L16 5 L10 5 L9 18 L6 18 L8 5 Z" fill="#30211b" opacity="0.35"/>
+  </g>
+
+  <!-- Grass clumps foreground -->
+  <g fill="#6b5a30" opacity="0.6">
+    <path d="M50 480 Q55 455 52 440 Q60 450 65 480"/>
+    <path d="M48 480 Q42 460 46 445 Q38 455 35 480"/>
+    <path d="M350 475 Q355 450 352 435 Q360 445 365 475"/>
+    <path d="M500 480 Q505 455 502 440 Q510 450 515 480"/>
+    <path d="M700 478 Q705 453 702 438 Q710 448 715 478"/>
+  </g>
+
+  <!-- Birds -->
+  <g stroke="#30211b" stroke-width="1" fill="none" opacity="0.35">
+    <path d="M350 180 Q354 176 358 180 Q362 176 366 180"/>
+    <path d="M380 170 Q383 167 386 170 Q389 167 392 170"/>
+    <path d="M420 185 Q423 182 426 185 Q429 182 432 185"/>
+  </g>
+
+  <!-- Text overlay area -->
+  <text x="400" y="480" text-anchor="middle" font-family="Georgia, serif" font-size="20" fill="#f7d794" font-weight="bold" letter-spacing="3" opacity="0.8">MASAI MARA</text>
+</svg>

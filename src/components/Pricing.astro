@@ -1,0 +1,121 @@
+---
+import { getLangFromUrl, useTranslations } from '../i18n/utils';
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+
+const pricingTiers = [
+  {
+    category: lang === 'es' ? 'City & Touring' : 'City & Touring',
+    vehicle: 'Toyota RAV4',
+    daily: '$65',
+    weekly: '$390',
+    monthly: '$1,500',
+    color: 'earth',
+  },
+  {
+    category: lang === 'es' ? 'Safari 4x4' : 'Safari 4x4',
+    vehicle: 'Land Cruiser Prado',
+    daily: '$120',
+    weekly: '$720',
+    monthly: '$2,800',
+    color: 'brand',
+    popular: true,
+  },
+  {
+    category: lang === 'es' ? 'Safari Premium' : 'Safari Premium',
+    vehicle: 'Land Cruiser 70',
+    daily: '$180',
+    weekly: '$1,080',
+    monthly: '$4,200',
+    color: 'brand',
+  },
+];
+---
+
+<section id="pricing" class="py-20 lg:py-28 bg-white">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <!-- Section Header -->
+    <div class="text-center mb-16">
+      <span class="inline-block text-brand-600 font-semibold text-sm uppercase tracking-widest mb-3">{t('pricing.title')}</span>
+      <h2 class="font-display text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">{t('pricing.subtitle')}</h2>
+      <div class="w-20 h-1 bg-brand-500 mx-auto rounded-full"></div>
+    </div>
+
+    <!-- Pricing Cards -->
+    <div class="grid md:grid-cols-3 gap-8 mb-16">
+      {pricingTiers.map((tier) => (
+        <div class={`relative rounded-2xl p-8 ${tier.popular ? 'bg-brand-950 text-white ring-2 ring-brand-500 scale-105' : 'bg-earth-50 text-gray-900'} transition-all`}>
+          {tier.popular && (
+            <div class="absolute -top-4 left-1/2 -translate-x-1/2 bg-brand-500 text-white text-xs font-bold px-4 py-1.5 rounded-full uppercase tracking-wider">
+              {lang === 'es' ? 'Más popular' : 'Most Popular'}
+            </div>
+          )}
+
+          <div class="text-center mb-8">
+            <span class={`text-sm font-semibold uppercase tracking-wider ${tier.popular ? 'text-brand-300' : 'text-brand-600'}`}>{tier.category}</span>
+            <h3 class="text-lg font-bold mt-1 mb-4">{tier.vehicle}</h3>
+
+            <div class="flex items-baseline justify-center gap-1">
+              <span class={`text-5xl font-display font-black ${tier.popular ? 'text-brand-400' : 'text-brand-600'}`}>{tier.daily}</span>
+              <span class={`text-sm ${tier.popular ? 'text-white/50' : 'text-gray-400'}`}>/{t('pricing.daily')}</span>
+            </div>
+          </div>
+
+          <div class="space-y-3 mb-8">
+            <div class={`flex items-center justify-between py-2 border-b ${tier.popular ? 'border-white/10' : 'border-gray-200'}`}>
+              <span class={`text-sm ${tier.popular ? 'text-white/70' : 'text-gray-500'}`}>{t('pricing.weekly')}</span>
+              <span class="font-bold">{tier.weekly}</span>
+            </div>
+            <div class={`flex items-center justify-between py-2 border-b ${tier.popular ? 'border-white/10' : 'border-gray-200'}`}>
+              <span class={`text-sm ${tier.popular ? 'text-white/70' : 'text-gray-500'}`}>{t('pricing.monthly')}</span>
+              <span class="font-bold">{tier.monthly}</span>
+            </div>
+          </div>
+
+          <a
+            href="https://wa.me/254700000000?text={encodeURIComponent(`${t('general.whatsappMessage')} - ${tier.vehicle}`)}"
+            target="_blank"
+            rel="noopener"
+            class={`block w-full text-center font-semibold py-3 rounded-xl transition-all ${tier.popular ? 'bg-brand-500 hover:bg-brand-600 text-white hover:shadow-lg hover:shadow-brand-500/25' : 'bg-brand-500 hover:bg-brand-600 text-white hover:shadow-lg'}`}
+          >
+            {t('pricing.cta')}
+          </a>
+        </div>
+      ))}
+    </div>
+
+    <!-- What's included / excluded -->
+    <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+      <div class="bg-safari-50 rounded-2xl p-8">
+        <h3 class="font-bold text-lg text-safari-800 mb-4 flex items-center gap-2">
+          <svg class="w-6 h-6 text-safari-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+          {t('pricing.includes.title')}
+        </h3>
+        <ul class="space-y-3">
+          {[1,2,3,4,5].map((i) => (
+            <li class="flex items-center gap-3 text-gray-700">
+              <svg class="w-5 h-5 text-safari-500 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>
+              {t(`pricing.includes.item${i}` as any)}
+            </li>
+          ))}
+        </ul>
+      </div>
+
+      <div class="bg-red-50 rounded-2xl p-8">
+        <h3 class="font-bold text-lg text-red-800 mb-4 flex items-center gap-2">
+          <svg class="w-6 h-6 text-red-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+          {t('pricing.excludes.title')}
+        </h3>
+        <ul class="space-y-3">
+          {[1,2,3].map((i) => (
+            <li class="flex items-center gap-3 text-gray-700">
+              <svg class="w-5 h-5 text-red-400 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M6 18L18 6M6 6l12 12"/></svg>
+              {t(`pricing.excludes.item${i}` as any)}
+            </li>
+          ))}
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>

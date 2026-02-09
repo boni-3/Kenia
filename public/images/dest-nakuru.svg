@@ -1,0 +1,179 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <defs>
+    <linearGradient id="nkSky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#4a6fa5"/>
+      <stop offset="25%" stop-color="#6a8ec0"/>
+      <stop offset="50%" stop-color="#8ab0d8"/>
+      <stop offset="70%" stop-color="#b0cce6"/>
+      <stop offset="90%" stop-color="#d8e4f0"/>
+      <stop offset="100%" stop-color="#e8dce0"/>
+    </linearGradient>
+    <linearGradient id="nkLake" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#7ab0d0"/>
+      <stop offset="30%" stop-color="#8ab8d8"/>
+      <stop offset="60%" stop-color="#a0c4e0"/>
+      <stop offset="100%" stop-color="#d0a8b8"/>
+    </linearGradient>
+    <linearGradient id="nkHills" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#5a7a5a"/>
+      <stop offset="100%" stop-color="#4a6a4a"/>
+    </linearGradient>
+    <linearGradient id="nkShore" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#d0b8a0"/>
+      <stop offset="100%" stop-color="#c0a890"/>
+    </linearGradient>
+    <!-- Pink reflection on water -->
+    <linearGradient id="nkPink" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#e8a0b0" stop-opacity="0.3"/>
+      <stop offset="50%" stop-color="#f0b0c0" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#e8a0b0" stop-opacity="0.3"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Sky -->
+  <rect width="800" height="500" fill="url(#nkSky)"/>
+
+  <!-- Distant hills (Rift Valley escarpment) -->
+  <path d="M0 200 Q50 175 120 190 Q200 170 300 180 Q400 165 500 178 Q600 168 700 182 Q750 175 800 185 L800 240 L0 240 Z" fill="url(#nkHills)" opacity="0.6"/>
+
+  <!-- Closer hills -->
+  <path d="M0 230 Q80 215 180 225 Q280 210 380 222 Q500 208 620 220 Q720 212 800 225 L800 260 L0 260 Z" fill="#5a8a5a" opacity="0.5"/>
+
+  <!-- Tree line on hills -->
+  <g fill="#3a5a3a" opacity="0.3">
+    <circle cx="50" cy="228" r="5"/>
+    <circle cx="60" cy="226" r="6"/>
+    <circle cx="72" cy="228" r="5"/>
+    <circle cx="150" cy="222" r="6"/>
+    <circle cx="162" cy="220" r="7"/>
+    <circle cx="175" cy="222" r="5"/>
+    <circle cx="300" cy="218" r="6"/>
+    <circle cx="312" cy="216" r="7"/>
+    <circle cx="325" cy="218" r="5"/>
+    <circle cx="450" cy="215" r="6"/>
+    <circle cx="462" cy="213" r="7"/>
+    <circle cx="600" cy="218" r="6"/>
+    <circle cx="612" cy="216" r="7"/>
+    <circle cx="700" cy="220" r="5"/>
+    <circle cx="712" cy="218" r="6"/>
+  </g>
+
+  <!-- Lake shore -->
+  <path d="M0 255 Q200 248 400 258 Q600 250 800 260 L800 280 L0 280 Z" fill="url(#nkShore)"/>
+
+  <!-- Lake water -->
+  <path d="M0 272 Q200 265 400 275 Q600 268 800 278 L800 500 L0 500 Z" fill="url(#nkLake)"/>
+
+  <!-- Pink reflection from flamingos -->
+  <rect x="100" y="310" width="600" height="40" fill="url(#nkPink)" rx="10"/>
+  <rect x="150" y="360" width="500" height="25" fill="url(#nkPink)" rx="8" opacity="0.6"/>
+
+  <!-- Water ripple lines -->
+  <g stroke="#8ab8d8" stroke-width="0.5" opacity="0.3">
+    <path d="M50 320 Q150 318 250 322 Q350 318 450 322" fill="none"/>
+    <path d="M200 350 Q300 348 400 352 Q500 348 600 352" fill="none"/>
+    <path d="M100 380 Q200 378 300 382 Q400 378 500 382" fill="none"/>
+    <path d="M150 410 Q250 408 350 412 Q450 408 550 412" fill="none"/>
+    <path d="M80 440 Q180 438 280 442 Q380 438 480 442" fill="none"/>
+  </g>
+
+  <!-- Flamingo flock (standing in shallow water) -->
+  <!-- Flamingo 1 (detailed, foreground) -->
+  <g transform="translate(250, 280)">
+    <path d="M0 0 Q2 -8 5 -18 Q8 -30 10 -40 Q12 -48 10 -50 Q8 -52 6 -50 Q5 -48 6 -45" fill="none" stroke="#e86090" stroke-width="2" stroke-linecap="round"/>
+    <!-- Body -->
+    <ellipse cx="5" cy="-18" rx="6" ry="4" fill="#e86090" opacity="0.8"/>
+    <!-- Head -->
+    <circle cx="6" cy="-50" r="2.5" fill="#e86090"/>
+    <!-- Beak -->
+    <path d="M6 -50 Q4 -52 2 -51 Q3 -50 6 -50" fill="#30211b"/>
+    <!-- Legs -->
+    <line x1="3" y1="-14" x2="2" y2="8" stroke="#d05070" stroke-width="1"/>
+    <line x1="7" y1="-14" x2="8" y2="8" stroke="#d05070" stroke-width="1"/>
+  </g>
+
+  <!-- Flamingo 2 -->
+  <g transform="translate(280, 282)">
+    <path d="M0 0 Q1 -6 3 -15 Q5 -25 7 -35 Q9 -42 7 -44 Q5 -46 4 -44" fill="none" stroke="#e07088" stroke-width="1.8"/>
+    <ellipse cx="3" cy="-15" rx="5" ry="3.5" fill="#e07088" opacity="0.8"/>
+    <circle cx="5" cy="-44" r="2" fill="#e07088"/>
+    <path d="M5 -44 Q3 -46 1.5 -45" fill="#30211b"/>
+    <line x1="1" y1="-12" x2="0" y2="6" stroke="#c85068" stroke-width="1"/>
+    <line x1="5" y1="-12" x2="6" y2="6" stroke="#c85068" stroke-width="1"/>
+  </g>
+
+  <!-- Flamingo 3 (feeding, head down) -->
+  <g transform="translate(310, 284)">
+    <ellipse cx="3" cy="-15" rx="5" ry="3.5" fill="#e86090" opacity="0.75"/>
+    <path d="M3 -15 Q0 -12 -2 -8 Q-3 -5 -2 -2" fill="none" stroke="#e86090" stroke-width="2"/>
+    <circle cx="-2" cy="-1" r="2" fill="#e86090"/>
+    <line x1="1" y1="-12" x2="0" y2="6" stroke="#d05070" stroke-width="1"/>
+    <line x1="5" y1="-12" x2="6" y2="6" stroke="#d05070" stroke-width="1"/>
+  </g>
+
+  <!-- Flamingo 4 -->
+  <g transform="translate(340, 283)">
+    <path d="M0 0 Q1 -6 3 -15 Q5 -28 7 -38 Q8 -42 7 -44 Q5 -45 4 -43" fill="none" stroke="#e07888" stroke-width="1.8"/>
+    <ellipse cx="3" cy="-15" rx="5" ry="3.5" fill="#e07888" opacity="0.75"/>
+    <circle cx="5" cy="-44" r="2" fill="#e07888"/>
+    <line x1="1" y1="-12" x2="0" y2="6" stroke="#c85068" stroke-width="1"/>
+    <line x1="5" y1="-12" x2="6" y2="6" stroke="#c85068" stroke-width="1"/>
+  </g>
+
+  <!-- Flamingo 5 -->
+  <g transform="translate(370, 285)">
+    <path d="M0 0 Q2 -8 4 -16 Q6 -28 8 -36 Q9 -40 8 -42" fill="none" stroke="#d87088" stroke-width="1.5"/>
+    <ellipse cx="4" cy="-16" rx="4.5" ry="3" fill="#d87088" opacity="0.7"/>
+    <circle cx="8" cy="-42" r="1.8" fill="#d87088"/>
+    <line x1="2" y1="-13" x2="1" y2="5" stroke="#c05060" stroke-width="0.8"/>
+    <line x1="6" y1="-13" x2="7" y2="5" stroke="#c05060" stroke-width="0.8"/>
+  </g>
+
+  <!-- More distant flamingos (simplified pink dots/shapes) -->
+  <g fill="#e07088" opacity="0.6">
+    <ellipse cx="400" cy="290" rx="3" ry="2"/>
+    <ellipse cx="410" cy="291" rx="3" ry="2"/>
+    <ellipse cx="420" cy="289" rx="3" ry="2"/>
+    <ellipse cx="432" cy="290" rx="2.5" ry="1.8"/>
+    <ellipse cx="442" cy="291" rx="2.5" ry="1.8"/>
+    <ellipse cx="455" cy="290" rx="2" ry="1.5"/>
+    <ellipse cx="465" cy="289" rx="2" ry="1.5"/>
+    <ellipse cx="478" cy="290" rx="2" ry="1.5"/>
+  </g>
+  <!-- Even more distant (pink line) -->
+  <line x1="490" y1="292" x2="580" y2="290" stroke="#d88098" stroke-width="2" opacity="0.3"/>
+
+  <!-- Distant flamingo group 2 -->
+  <g fill="#e07888" opacity="0.4">
+    <ellipse cx="200" cy="295" rx="2" ry="1.5"/>
+    <ellipse cx="210" cy="296" rx="2" ry="1.5"/>
+    <ellipse cx="220" cy="295" rx="2.5" ry="1.8"/>
+    <ellipse cx="232" cy="296" rx="2" ry="1.5"/>
+  </g>
+
+  <!-- Flying flamingos -->
+  <g transform="translate(500, 160)">
+    <!-- Flamingo in flight 1 -->
+    <path d="M0 0 Q-8 -3 -15 0 Q-8 3 0 0 Q8 -3 15 0 Q8 3 0 0" fill="#e07088" opacity="0.5"/>
+    <path d="M-15 0 Q-18 -1 -20 0" stroke="#e07088" stroke-width="1" fill="none" opacity="0.5"/>
+    <path d="M15 0 Q18 1 20 0" stroke="#e07088" stroke-width="0.5" fill="none" opacity="0.5"/>
+  </g>
+  <g transform="translate(530, 150)">
+    <path d="M0 0 Q-7 -2 -13 0 Q-7 2 0 0 Q7 -2 13 0 Q7 2 0 0" fill="#e07888" opacity="0.4"/>
+    <path d="M-13 0 Q-15 -1 -17 0" stroke="#e07888" stroke-width="0.8" fill="none" opacity="0.4"/>
+  </g>
+  <g transform="translate(515, 145)">
+    <path d="M0 0 Q-6 -2 -11 0 Q-6 2 0 0 Q6 -2 11 0 Q6 2 0 0" fill="#d87888" opacity="0.35"/>
+  </g>
+
+  <!-- Shore vegetation -->
+  <g fill="#5a7a4a" opacity="0.3">
+    <ellipse cx="100" cy="270" rx="20" ry="5"/>
+    <ellipse cx="700" cy="268" rx="25" ry="6"/>
+    <ellipse cx="50" cy="272" rx="15" ry="4"/>
+    <ellipse cx="750" cy="270" rx="18" ry="5"/>
+  </g>
+
+  <!-- Label -->
+  <text x="400" y="480" text-anchor="middle" font-family="Georgia, serif" font-size="20" fill="#4a6fa5" font-weight="bold" letter-spacing="3" opacity="0.7">LAKE NAKURU</text>
+</svg>
